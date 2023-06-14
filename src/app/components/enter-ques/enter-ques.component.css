@@ -1,0 +1,13 @@
+.button-space{
+    margin-left: 10px;
+}
+
+.counter-position{
+    position: absolute;
+    bottom: 10px;
+    right: 354px;
+}
+
+.textarea-wrapper{
+    position: relative;
+}

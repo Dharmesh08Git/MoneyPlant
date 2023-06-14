@@ -1,0 +1,11 @@
+.navbars{
+    font-size: 150%;
+}
+.button-space{
+    margin-left: 10px;
+    padding: 0px 15px;
+    font-size: small;
+}
+.linkActive{
+    border-bottom: 2px solid green;
+}
