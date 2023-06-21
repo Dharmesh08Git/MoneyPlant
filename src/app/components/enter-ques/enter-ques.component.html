@@ -1,15 +1,15 @@
 <div class="container">
-    <form [formGroup]="addQuesForm">
+    <form  [formGroup]="addQuesForm" (ngSubmit)="submitquestion(addQuesForm)">
         <h5>Ask your Queries</h5>
         <div class="textarea-wrapper ">
             <textarea #questionInput rows="10" cols="100" maxlength="500"
                 (input)="updateRemainingCharacters(questionInput.value)" placeholder="Write something here..."
-                formControlName="newQues"></textarea>
+                formControlName="question"></textarea>
             <span class="counter-position">Characters Remaining:{{characterCount}}</span>
         </div>
 
         <br>
-        <button type="button" class="btn btn-outline-success">Save to draft</button>
-        <button type="button" class="btn btn-success button-space" onclick="">Submit</button>
+        <input type="submit" class="btn btn-outline-success"/>
+        <input type="submit" class="btn btn-success button-space">
     </form>
 </div>

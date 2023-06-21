@@ -1,23 +1,23 @@
 <div class="container">
-  <h3>My Questions</h3>
+  <ng-container *ngFor="let ques of allQues">
+    <div class="card border-danger">
+      <div class="card-body">
+        <div class="d-flex justify-content-between lh-condensed">
+          <!-- <div class="float-left">
+            <h5>{{ route.routeFrom }}</h5>
+          </div> -->
 
-  <div class="container2">
-    <div class="box">
-      <div class="box1">
-        What should be my rate of saving compared to my earning ?
+          <div>
+            <h5>{{ques.question}}</h5>
+          </div>
+
+          <!-- <div class="float-right">
+            <h5>{{ route.routeTo }}</h5>
+          </div> -->
+        </div>
       </div>
-      <div class="box2">Answer received</div>
     </div>
 
-    <div class="box">
-      <div class="box1">
-        What should be my rate of saving compared to my earning ?
-      </div>
-
-      <div class="box3">Pending</div>
-    </div>
-  </div>
-
-  <button>Enter a Question</button>
+    <hr />
+  </ng-container>
 </div>
-
