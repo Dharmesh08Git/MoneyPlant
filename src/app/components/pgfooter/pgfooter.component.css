@@ -1,0 +1,51 @@
+footer {
+
+    position: relative;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 100%;
+
+    background-color: rgb(39, 98, 122);
+
+    color: white;
+
+    text-align: center;
+
+   
+
+  }
+
+  a {
+
+    color: white;
+
+  }
+
+  p{
+
+    color:rgb(245, 228, 228);
+
+    text-align: left;
+
+    font-size: small;
+
+    margin-bottom: 2px;
+
+  }
+
+  h5{
+
+    text-align: left;
+
+    font-size: small;
+
+    text-decoration:solid;
+
+    margin-top: 50px;
+
+    margin-bottom: 0px;
+
+  }

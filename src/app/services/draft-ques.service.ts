@@ -13,4 +13,8 @@ export class DraftQuesService {
   getDraftQues(){
     return this.http.get(`${this.baseUrl}/question/getAllDraftQuestion`);
   }
+//   public savedraftquestion(addQuesForm:any){
+//     return this.http.post(`${this.baseUrl}/question/getAllDraftQuestion`,addQuesForm);
+//  }
+
 }

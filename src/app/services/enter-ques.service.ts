@@ -10,7 +10,11 @@ export class EnterQuesService {
 
   constructor(private http:HttpClient) { }
   
-  public submitquestion(addQuesForm:any){
-     return this.http.post(`${this.baseUrl}/question/addQuestion`,addQuesForm);
+  public submitquestion(Que:any){
+     return this.http.post(`${this.baseUrl}/question/addQuestion`,Que);
+  }
+
+  public getQuestiobById(id:number){
+    return this.http.get(`${this.baseUrl}/question/getQuestionById/${id}`);
   }
 }

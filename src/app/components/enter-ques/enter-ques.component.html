@@ -1,15 +1,42 @@
 <div class="container">
-    <form  [formGroup]="addQuesForm" (ngSubmit)="submitquestion(addQuesForm)">
+    <form  [formGroup]="addQuesForm" (ngSubmit)="submitquestion($event)">
         <h5>Ask your Queries</h5>
         <div class="textarea-wrapper ">
             <textarea #questionInput rows="10" cols="100" maxlength="500"
                 (input)="updateRemainingCharacters(questionInput.value)" placeholder="Write something here..."
                 formControlName="question"></textarea>
-            <span class="counter-position">Characters Remaining:{{characterCount}}</span>
+                
+            <span class="counter-position" ><input type="radio" name="foo" value="Y" checked>{{characterCount}}</span>
         </div>
 
         <br>
-        <input type="submit" class="btn btn-outline-success"/>
-        <input type="submit" class="btn btn-success button-space">
+        <button type="submit" class="btn btn-outline-secondary" name="draft">Save as draft</button>
+        <button type="submit" class="btn btn-success button-space" name="save" (click)="openModel()">Submit</button>
     </form>
+    <br>
 </div>
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Your question has been successfully submitted</h5>
+                <button type="button" class="btn-close" (click)="CloseModel()" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Please enjoy this finance tip till then</h6>
+                <div class="tip">
+                    <h5>"Smart investment is the key"</h5>
+                </div>
+                <img src="assets/popup2.png" width="80px" height="60px" id=logo alt="Logo image">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" (click)="CloseModel()"
+                    data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- <app-readmore></app-readmore>
+<app-banner></app-banner> -->

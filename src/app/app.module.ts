@@ -9,6 +9,8 @@ import { DraftsComponent } from './components/drafts/drafts.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DraftQuesService } from './services/draft-ques.service';
 import { HttpClientModule } from '@angular/common/http';
+import { PgfooterComponent } from './components/pgfooter/pgfooter.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,14 +18,16 @@ import { HttpClientModule } from '@angular/common/http';
     EnterQuesComponent,
     AllQuesComponent,
     
-    DraftsComponent
+    DraftsComponent,
+         PgfooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   providers: [DraftQuesService],
   bootstrap: [AppComponent]

@@ -4,10 +4,40 @@
 
 .counter-position{
     position: absolute;
-    bottom: 10px;
-    right: 354px;
+    bottom: 70px;
+    right: 370px;
 }
 
 .textarea-wrapper{
-    position: relative;
+    background-color: white;
+    padding:2em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.modal{
+    margin-top: 150px;
+}
+
+.tip{
+    color: green;
+}
+
+.card1{
+
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    text-align: left;
+    margin-top: 60px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+textarea {
+    resize: none;
 }
